@@ -25,3 +25,4 @@ for(i=0;i<100;i++){
     infiniteScrollObserver.observe(the_new)
 }
 
+console.log("yoooo")
