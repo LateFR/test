@@ -7,16 +7,14 @@ function create_element(){
 }
 
 const recroll=(entries, observer)=>{
-    entries.forEach((entrie)=>{
-        if (entrie.isIntersecting){
-            console.log(entrie.target.id)
+    entries.forEach(entry => {
+        console.log(entry.target.id)
+        if (entry.isIntersecting){
             const new_element=create_element()
-            infiniteScrollObserver(new_element)
+            infiniteScrollObserver.observe(new_element)
         }
     }
 }
-
-
 const infiniteScrollObserver= new IntersectionObserver(recroll,{
     rootMargin:"5px",
     threshold: 0.5
