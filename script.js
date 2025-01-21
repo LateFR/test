@@ -27,4 +27,4 @@ for(i=0;i<100;i++){
 document.querySelectorAll("the_li").forEach(new_li=>{
   infinitScrollObserver.observe(new_li)
 }
-
+)
