@@ -1,4 +1,4 @@
-function create_element(position){
+function create_element(position="None"){
     let new_li=document.createElement("li")
     new_li.innerText="hi"
     new_li.setAttribute("class","the_li")
