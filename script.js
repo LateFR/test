@@ -1,6 +1,6 @@
 
 function create_element(){
-    new_li=document.createElement("li")
+    const new_li=document.createElement("li")
     new_li.innerText="hi"
     new_li.setAttribute("class","the_li")
     document.querySelector("ul").appendChild(new_li)
@@ -9,8 +9,8 @@ function create_element(){
 
 const recroll=(entries, observer)=>{
     if (entries.isIntersecting){
-        new_li=create_element()
-        infiniteScrollObserver(new_li)
+        const new_element=create_element()
+        infiniteScrollObserver(new_element)
     }
 }
 
@@ -21,8 +21,8 @@ const infiniteScrollObserver= new IntersectionObserver(recroll,{
 })
 
 for(i=0;i<100;i++){
-    new_li=create_element()
-    infiniteScrollObserver.observe(new_li)
+    const the_new=create_element()
+    infiniteScrollObserver.observe(the_new)
 }
 
 document.querySelectorAll("the_li").forEach(new_li=>{
