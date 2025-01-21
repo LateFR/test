@@ -1,6 +1,8 @@
 
 function toggle_opacity(li_element){
+    if (element){
     li_element.classList.toggle("visible")
+    }
   }
 
 const recroll=(entries, observer)=>{
