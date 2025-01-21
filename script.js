@@ -1,8 +1,13 @@
-function create_element(){
+function create_element(position){
     let new_li=document.createElement("li")
     new_li.innerText="hi"
     new_li.setAttribute("class","the_li")
-    document.querySelector("ul").appendChild(new_li)
+    const=document.querySelector("ul")
+    if(position=="top"){
+        ul.appendChild(new_li)
+    }else{
+        ul.insertBefore(new_li,ul.firstChild)
+    }
     return new_li
 }
 
@@ -11,9 +16,12 @@ const recroll=(entries, observer)=>{
     entries.forEach(entry => {
         console.log(entry.target.id)
         if (entry.isIntersecting){
-            const new_element=create_element()
+            position = entry.boundingClientRect.top? "top":"bottom"
+            const new_element=create_element(position)
             infiniteScrollObserver.observe(new_element)
+            
         }
+
     })
 }
 
