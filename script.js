@@ -13,7 +13,7 @@ const recroll=(entries, observer)=>{
             const new_element=create_element()
             infiniteScrollObserver.observe(new_element)
         }
-    }
+    })
 }
 
 const infiniteScrollObserver= new IntersectionObserver(recroll,{
