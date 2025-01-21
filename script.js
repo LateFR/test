@@ -21,12 +21,12 @@ const recroll=(entries, observer)=>{
         console.log(entry.target.id)
         setTimeout(()=>{
             if (entry.isIntersecting){
-                let position = entry.target.getBoundingClientRect().top < 0 ? "top":"bottom"
+                let position = entry.target.getBoundingClientRect().top < 10 ? "top":"bottom"
                 const new_element=create_element(position)
                 infiniteScrollObserver.observe(new_element)
                 entry.target.remove()
             }
-        },1500)
+        },500)
     })
 }
 
