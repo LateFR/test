@@ -15,7 +15,7 @@ const recroll=(entries, observer)=>{
     entries.forEach(entry => {
         console.log(entry.target.id)
         if (entry.isIntersecting){
-            let position = entry.target.getBoundingClientRect().top? "top":"bottom"
+            let position = entry.target.getBoundingClientRect().top?<0 "top":"bottom"
             const new_element=create_element(position)
             infiniteScrollObserver.observe(new_element)
             entry.target.remove()
