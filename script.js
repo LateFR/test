@@ -1,4 +1,3 @@
-
 function create_element(){
     let new_li=document.createElement("li")
     new_li.innerText="hi"
