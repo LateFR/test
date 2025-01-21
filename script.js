@@ -6,9 +6,11 @@ function create_element(position="None"){
     if(position=="top"){
         ul.insertBefore(new_li,ul.firstChild)
         ul.lastChild.remove()
-    }else{
+    }else if (position=="bottom"){
         ul.appendChild(new_li)
         ul.firstChild.remove()
+    }else{
+        ul.appendChild(new_li)
     }
     return new_li
 }
