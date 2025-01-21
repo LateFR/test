@@ -5,8 +5,10 @@ function create_element(position){
     const ul =document.querySelector("ul")
     if(position=="top"){
         ul.insertBefore(new_li,ul.firstChild)
+        ul.lastChild.remove()
     }else{
         ul.appendChild(new_li)
+        ul.firstChild.remove()
     }
     return new_li
 }
