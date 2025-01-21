@@ -1,6 +1,6 @@
 
 function create_element(){
-    const new_li=document.createElement("li")
+    let new_li=document.createElement("li")
     new_li.innerText="hi"
     new_li.setAttribute("class","the_li")
     document.querySelector("ul").appendChild(new_li)
@@ -25,6 +25,3 @@ for(i=0;i<100;i++){
     infiniteScrollObserver.observe(the_new)
 }
 
-document.querySelectorAll("the_li").forEach(new_li=>{
-      infinitScrollObserver.observe(new_li)
-})
