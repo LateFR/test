@@ -4,7 +4,7 @@ function create_element(){
     new_li.innerText="hi"
     new_li.setAttribute("class","the_li")
     document.querySelector("ul").appendChild(new_li)
-    retrun new_li
+    return new_li
 }
 
 const recroll=(entries, observer)=>{
