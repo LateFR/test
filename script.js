@@ -22,6 +22,9 @@ for(i=0;i<100;i++){
   new_li.innerText="hi"
   new_li.setAttribute("class","the_li")
   document.querySelector("ul").appendChild(new_li)
+}
+
+document.querySelectorAll("the_li").forEach(new_li=>{
   infinitScrollObserver.observe(new_li)
 }
 
