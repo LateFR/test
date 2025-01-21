@@ -1,6 +1,6 @@
 
 function toggle_opacity(li_element){
-    if (element){
+    if (li_element){
     li_element.classList.toggle("visible")
     }
   }
