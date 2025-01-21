@@ -5,9 +5,9 @@ for(i=0;i<100;i++){
   document.querySelector("ul").appendChild(new_li)
 }
 
-function toogle_opacity(){
+function toggle_opacity(){
   li_elements=document.querySelectorAll(".the_li")
   li_elements.forEach((element)=>{
-    element
+    element.classList.toggle("visible")
   })
 }
