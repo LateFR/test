@@ -11,6 +11,7 @@ function create_element(position){
     return new_li
 }
 
+
 const recroll=(entries, observer)=>{
     entries.forEach(entry => {
         console.log(entry.target.id)
