@@ -7,12 +7,13 @@ for(i=0;i<100;i++){
 
 function toggle_opacity(li_element){
     element.classList.toggle("visible")
-  })
+  }
 
 const recroll=(entries, observer)=>{
   entries.forEach(element=>{
     toggle_opacity(element)
   })
+}
 
 
 const infinitScrollObserver= new IntersectionObserver(recroll,{
