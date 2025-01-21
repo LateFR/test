@@ -13,7 +13,7 @@ const recroll=(entries, observer)=>{
   entries.forEach(element=>{
     toggle_opacity(element)
   })
-}
+
 
 const infinitScrollObserver= new IntersectionObserver(recroll,{
   rootMargin:"5px",
