@@ -5,9 +5,17 @@ for(i=0;i<100;i++){
   document.querySelector("ul").appendChild(new_li)
 }
 
-function toggle_opacity(){
-  li_elements=document.querySelectorAll(".the_li")
-  li_elements.forEach((element)=>{
+function toggle_opacity(li_element){
     element.classList.toggle("visible")
   })
 }
+const recroll=(entries, observer)=>{
+  entries.forEach(element=>{
+    toggle_opacity(element)
+  })
+}
+
+const infinitScrollObserver= new IntersectionObserver(recroll,{
+  rootMargin:"5px",
+  threshold: 0.0
+})
