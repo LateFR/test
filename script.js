@@ -7,10 +7,12 @@ function create_element(){
 }
 
 const recroll=(entries, observer)=>{
-    if (entries.isIntersecting){
-        console.log(entries.target.id)
-        const new_element=create_element()
-        infiniteScrollObserver(new_element)
+    entries.forEach((entrie)=>{
+        if (entrie.isIntersecting){
+            console.log(entrie.target.id)
+            const new_element=create_element()
+            infiniteScrollObserver(new_element)
+        }
     }
 }
 
