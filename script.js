@@ -2,7 +2,7 @@ function create_element(position){
     let new_li=document.createElement("li")
     new_li.innerText="hi"
     new_li.setAttribute("class","the_li")
-    const=document.querySelector("ul")
+    const ul =document.querySelector("ul")
     if(position=="top"){
         ul.insertBefore(new_li,ul.firstChild)
     }else{
