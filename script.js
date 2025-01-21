@@ -33,5 +33,3 @@ for(i=0;i<100;i++){
     const the_new=create_element()
     infiniteScrollObserver.observe(the_new)
 }
-
-
