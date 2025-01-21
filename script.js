@@ -15,6 +15,7 @@ const recroll=(entries, observer)=>{
         }
     }
 }
+
 const infiniteScrollObserver= new IntersectionObserver(recroll,{
     rootMargin:"5px",
     threshold: 0.5
