@@ -4,9 +4,9 @@ function create_element(position){
     new_li.setAttribute("class","the_li")
     const=document.querySelector("ul")
     if(position=="top"){
-        ul.appendChild(new_li)
-    }else{
         ul.insertBefore(new_li,ul.firstChild)
+    }else{
+        ul.appendChild(new_li)
     }
     return new_li
 }
