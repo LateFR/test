@@ -19,7 +19,7 @@ const recroll=(entries, observer)=>{
             position = entry.boundingClientRect.top? "top":"bottom"
             const new_element=create_element(position)
             infiniteScrollObserver.observe(new_element)
-            
+            entry.remove()
         }
 
     })
